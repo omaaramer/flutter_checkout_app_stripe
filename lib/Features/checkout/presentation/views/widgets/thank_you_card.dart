@@ -36,37 +36,31 @@ class ThankYouCard extends StatelessWidget {
               textAlign: TextAlign.center,
               style: Styles.style20,
             ),
-            const SizedBox(
-              height: 42,
-            ),
+            const Spacer(flex: 2),
             const PaymentItemInfo(
               title: 'Date',
               value: '01/24/2023',
             ),
-            const SizedBox(
-              height: 20,
-            ),
+            const Spacer(flex: 1),
             const PaymentItemInfo(
               title: 'Time',
               value: '10:15 AM',
             ),
-            const SizedBox(
-              height: 20,
-            ),
+            const Spacer(flex: 1),
             const PaymentItemInfo(
               title: 'To',
               value: 'Sam Louis',
             ),
+            const Spacer(flex: 1),
             const Divider(
-              height: 60,
+              height: 10,
               thickness: 2,
             ),
+            const Spacer(flex: 1),
             const TotalPrice(title: 'Total', value: r'$50.97'),
-            const SizedBox(
-              height: 30,
-            ),
+            const Spacer(flex: 2),
             const CardInfoWidget(),
-            const Spacer(),
+            const Spacer(flex: 5),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
