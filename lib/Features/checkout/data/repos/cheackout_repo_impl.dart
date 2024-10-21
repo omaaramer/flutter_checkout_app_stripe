@@ -11,7 +11,8 @@ class CheackoutRepoImpl extends CheackoutRepo {
   Future<Either<Failure, void>> makePayment(
       {required PaymentIntentInputModel paymentIntentInputModel}) async {
     try {
-      await stripeService.createPaymentIntent(paymentIntentInputModel);
+      await stripeService.makePayment(
+          paymentIntentInputModel: paymentIntentInputModel);
       return const Right(null);
     } catch (e) {
       return Left(ServerFailure(message: e.toString()));

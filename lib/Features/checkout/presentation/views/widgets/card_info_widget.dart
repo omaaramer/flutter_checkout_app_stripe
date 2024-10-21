@@ -20,9 +20,7 @@ class CardInfoWidget extends StatelessWidget {
       child: Row(
         children: [
           SvgPicture.asset('assets/images/master_card.svg'),
-          const SizedBox(
-            width: 23,
-          ),
+          const Spacer(),
           Text.rich(
             TextSpan(
               children: [
